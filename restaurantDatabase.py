@@ -2,7 +2,7 @@ import mysql.connector
 from mysql.connector import Error
 
 class RestaurantDatabase:
-    def __init__(self, host="127.0.0.1", port="3306", database="restaurant_reservations", user='root', password='Flames55!'):
+    def __init__(self, host="127.0.0.1", port="3306", database="restaurant_reservations", user='root', password='PASSWORD'):
         self.host = host
         self.port = port
         self.database = database
@@ -177,7 +177,7 @@ class RestaurantDatabase:
             print("Database connection closed")
 
 def main():
-    db = RestaurantDatabase(password='Flames55!')
+    db = RestaurantDatabase(password='PASSWORD')
 
     if db.connection and db.connection.is_connected():
         while True:
