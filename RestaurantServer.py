@@ -5,7 +5,7 @@ import cgi
 class RestaurantPortalHandler(BaseHTTPRequestHandler):
     
     def __init__(self, *args, **kwargs):
-        self.database = RestaurantDatabase(password='Flames55!')
+        self.database = RestaurantDatabase(password='PASSWORD')
         super().__init__(*args, **kwargs)
     
     def do_POST(self):
